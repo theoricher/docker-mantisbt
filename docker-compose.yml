@@ -1,7 +1,6 @@
-version: '3'
-services:
-  a:
-    build: 
-      context: a
-      image: a
-      dockerfile: Dockerfile
+mantisbt:
+  image: theoricher/mantisbt
+  ports:
+    - "8989:80"
+  restart: always
+
